@@ -1,0 +1,5 @@
+¿Qué es Async await?
+    - Crea funciones asincronas 
+    - No soportado en todos los navegadores
+    - Una función asincrona siempre requiere un promise
+    - el await espera a que una parte concreta del código finalize para continuar con la ejecución del código restante

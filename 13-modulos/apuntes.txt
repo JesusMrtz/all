@@ -1,0 +1,19 @@
+* ¿Que son los módulos?
+    - Un módulo en porogramación nos va a permitir agrupar funcionalidad relacionada en un mismo archivo de esta forma, conforme nuestro proyecto crezca, será más fácil de mantener y estará mejor organizado
+
+    - La ventaja principal de un módulo es que podremos utilizarlo únicamente donde sea requerido, dejando el resto del programa oculto para el resto del código y también re-utilizar código.
+
+
+* Benefecios: 
+    - Dividir el código
+    - Reutilizable 
+    - Dependencia
+    - Evitan el conficto con el nombre de las variables 
+
+
+¿ Qué es una dependencia ?
+    - Un modulo puede y debe estar conectado con otro módulo, esa relación se conoce como dependencia.
+    - Si un módulo requiere una pieza de otro modulo, se dice que "depende de ese modulo"
+    - Un ejempo es Bootstrap, requiere jQuery
+
+    

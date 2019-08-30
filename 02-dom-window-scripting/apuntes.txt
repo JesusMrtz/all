@@ -1,0 +1,111 @@
+* getElementById 
+    - Selecciona un elemento del DOM por su ID
+
+
+
+/*********** TRAVERSING ********/
+* Traversing 
+    - Puede recorrer de un nodo a otro
+
+
+* obtener hijos
+    - elementoPAdre.children 
+
+* ir de un hijo a padre 
+    - elementoHijo.parentElement
+
+* Ir a un elemento hermano a un hermano anterior
+    - elementoHermano.previusElementSigling
+
+* Ir a un elemento hermano a un hermano siguiente
+    - elementoHermano.nextElementSigling
+
+
+
+/************ CREAR ELEMENTOS HTML CON JS **********/
+
+* Crear elemento
+    - const enlace = document.createElement("a");
+
+* Agregando una clase
+    - enlace.className = "enlace";
+
+* Añadir id 
+    - enlace.id = "nuevo-id";
+
+* Añadir href
+    - enlace.setAttribute("href", "#");
+
+* Añadir texto
+    - enlace.textContent = "Nuevo enlace";
+
+* Añadirlo al padre
+    - let navegacion = document.querySelector("#secundaria");
+    - navegacion.appendChild(enlace);
+
+
+
+/************** REEMPLAZAR ELEMENTOS *****************/
+
+* Reemplazar elementos
+    - const nuevoHeader = document.createElement("h2");
+
+* Agregar un ID 
+    - nuevoHeader.id = "encabezado";
+
+* Agregar nuevo texto
+    - nuevoHeader.textContent = "Nuevo encabezado";
+
+
+* Elemento anterior será reemplazado 
+    - const anterior = document.querySelector("#encabezado");
+    - const elementoPadre = document.getElementById("lista-cursos");
+
+* Reemplazar 
+    - elementoPadre.replaceChild(nuevoHeader, anterior);
+
+
+/************** ELIMIAR UN ELEMENTO DEL DOM ************/
+
+* Agregar el enlace 
+    - enlaces = document.querySelectorAll(".enlace");
+
+* Remover elementos del DOM 
+    - enlaces[0].remove();
+
+
+* Eliminar nodo de un elemento padre 
+    - Seleccionamos padre e hijo 
+        - const enlaces = document.querySelectorAll(".enlace");
+        - const navegacion = document.getElementById("principal");
+    
+    - Eliminamos el nodo
+        - navegacion.removeChild(enlaces[0]);
+
+
+
+/************* AGREGANDO Y QUITANDO ATRIBUTOS DE ELEMENTOS ************/
+
+* Obtener un elemento del DOM  
+    - let enlace = document.getElementById("enlace");
+
+* Obtener clases en formato String 
+    - enlace.className;
+
+* Obtener clases en formato arreglo 
+    - enlace.classList 
+
+* Agregar una nueva clases 
+    - enlace.classList.add("nuevoEnlace");
+
+* Obtener un atributo 
+    - enlace.getAttribute("href");
+
+* Crear un nuevo atributo o sobrescribirlo
+    - enlace.setAttribute("data-id", 20);
+
+* Saber si el elemento tiene un atributo 
+    - enlace.hasAttribute("data-id");
+
+* Remover un atributo 
+    - enlace.removeAttribute("data-id");

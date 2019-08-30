@@ -1,0 +1,57 @@
+Para utilizar Ajax de manera nativa primero se tiene que crear un objeto de la clase XMLHttpRequest
+
+    - const xhr = new XMLHttpRequest();
+
+Abrimos una conección con el método open(verboHttp, Url, asincrono true o false);
+
+    - xhr.open("GET", "datos.txt", true);
+
+Abrimos el evento que se dispara al completar la carga 
+    - // Una vez que carga la página ;
+    xhr.onload = function() {
+        /**
+         * Los estados de las peticiones
+         * 200: correcto
+         * 403: Prohibido
+         * 404: No encontrado
+         * 500: Problemas del servidor
+         */
+
+        if (this.status === 200) {
+            console.log(this.responseText);
+        }
+    }
+
+
+
+Enviamos el request 
+    - xhr.send();
+
+
+
+ En vez de utlizar el onload antes se utilizaba el método onreadystatechange con los siguientes ready status 
+    - 0: No iniciada 
+    - 1: Conección establecida
+    - 2: Recibido 
+    - 3: PRocesando 
+    - 4: Respuesta lista
+
+
+
+
+¿ Qué es una API ?
+    - API = Application Programming Interface
+    - Son funciones, métodos que ofrece una librería para ser utilizada por otro software como una capa de abstracción.
+    - Para acceder al servicio hay que enviar una petición estructurada
+
+
+¿ Que es una REST API's ?
+    - REST = Representational State Transfer 
+    - Puede ser diseñada en cualquier lenguaje
+    - REST describe como deben ponerse a disposición los recursos.
+    - La API debe resonder a los Request de HTTP: GET, POST, PUT, PATCH, DELETE 
+    - Cada API tiene sus propias reglas, métodos y estructuras.
+
+
+¿ Que son los endpoints y request?
+    - Una rest API cuenta con endpoints (o URLS) para hacer operaciones CRUD y un request con verbo HTTP

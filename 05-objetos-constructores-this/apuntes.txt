@@ -1,0 +1,10 @@
+****** PROTOTIPOS *****
+Los prototipos son un conjunto de normas para integrar Programación Orientada a Objetos en JavaScript. Entonces, siguiendo estas reglas nosotros debemos ser capaces de crear las distintas metodologías de la Orientación a Objetos:
+
+    - Herencia
+    - Encapsulamiento
+    - Abstracción
+    - Polimorfismo
+    - Por supuesto, no todas la metodologías están disponibles.
+
+PAra heredar protipos dentro de otro se utiliza el metodo calls (Que hace lo mismo que super() en cualquier lenguaje de programación POO)

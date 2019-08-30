@@ -1,0 +1,68 @@
+* Destructuring 
+    - Es un código que te ayuda extraer valores de un objeto o de un arreglo
+
+
+* Symbol 
+    - Permite crear propiedades únicas
+
+
+
+* Set 
+    - Son como arreglos pero con la gran diferencia de que si hay elementos repetidos este solo muestran uno 
+
+    -Crear un set: 
+        - let numero = new Set([1, 2, 3, 4, 5, 6, 1, 2, 3, 4]);
+
+    - Puede ser recorrido por un forEach 
+
+    - Para saber el tamaño del set se utiliza el size, ejemplo:
+        - numeros.size;
+
+    - Agregar nuevos valores al set
+        - numero.add("nuevoValor");
+
+    - Eliminar un valor en especifico
+        - numero.delete("nuevValor);
+
+    - Limpiar un set por completo 
+        - numero.clear();
+
+    - Convertir de set a arreglo 
+        - const arreglo = Array.from(numero); 
+            - Tambien puede utilizarse 
+                - const arreglo = [...arreglo];
+
+
+* Maps 
+    - Son listas ordenadas de cualquier tipo solamente que almacenan los valores con llave y valor
+
+    - Crear un map:
+        - const paciente = new Map([
+                            ["nombre", "Jesus"],
+                            ["habitacion", 400]
+                        ]);
+
+
+        - Los map son copatibles con los forEach
+        
+        - Saber el tamaño de un map 
+            - paciente.size;
+
+        - Agregar un nuevo item 
+            - paciente.set("sexo", "Hombre"); 
+
+        - Obtener solo un item 
+            - paciente.get("nombre")
+
+        - Eliminar un item 
+            - paciente.delete("sexo")
+
+        - Limpiar un item 
+            - paciente.clear();
+
+        - Saber si existe un item 
+            - paciente.has("sexo");
+
+        
+
+    

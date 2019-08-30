@@ -1,0 +1,27 @@
+* ¿Qué es el codigo sincrono o synchronous?
+    - En el código synchronous si tienes un programa de 2 líneas, la línea 2 no puede empezar sin haber terminado la linea 1
+    - Un ejemplo de la vida real puede ser:
+        - La fila de un supermercado
+
+
+* ¿Qué es el código asíncrono o asynchronous?
+    - En el código asynchronous puedes tener 2 líneas de código y la línea 2 ejecutarse y finalizar antes que la línea uno termine de hacerlo 
+    - Un ejemplo de la vida real puede ser:
+        - Un restaurante
+
+
+- La mayor parte de las veces que escribas código asíncrono será cuando interactuas con una API o REST API
+- XMLHTTPRequest y Fetch API son ejemplos de código asíncrono
+
+- En JavaScript tendrás a tu disposición las siguientes funciones para crear código asíncrono.
+    - Callbacks
+    - Promises
+    - Async/Await
+
+
+* ¿Qué son los callbacks?
+    - Es una función que corre dentro de otra función para que se ejecute
+
+
+* ¿Qué son los promises?
+    - 

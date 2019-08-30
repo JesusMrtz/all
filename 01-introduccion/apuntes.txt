@@ -1,0 +1,79 @@
+Para convertir un String a número se utiliza el: 
+    - parseInt(variable)
+    - Number(variable)
+
+Para convertir un número a Strin se utiliza el; 
+    - String(variable)
+    -  String(arreglo)
+    - variable.toString();
+
+
+Saber si la variable es un arreglo 
+    - Array.isArray(variable);
+
+
+* Metodos para los arreglos 
+    * Agregar un nuevo valor al final del arreglo:
+        - push("Valor");
+    
+    * Encontrar un valor en el arreglo: 
+        - variable.indexOF(ValorAEncontrar);
+            - Te devuelve el index donde fue encontrado y si no lo encuentra te arrojará un -1
+    
+    * Agregar un valor al inicio del arreglo
+        - variable.unshift(valorAagregar);
+    
+    * Eliminar el elemento final del arreglo
+        - variable.pop()
+    
+    * Eliminar un elemento al inicio del arreglo
+        - variable.shift()
+
+    * Eliminar un elemento a partir de una posicion
+     - variable.splice(index, cantidadDeElementosAEliminar);
+
+    * Ordenar el arreglo del final al inicio
+        - variable.reverse()
+
+    * Unir arreglos
+        - variable1.concat(variable2);
+
+    * Ordenar por nombre alfabetico 
+        - variable.sort()
+
+    * Ordenar un arreglo de número menor a mayor
+        - variable.sort( (valor1, valor2) => valor1 - valor2 );
+
+    * Ordenar un arreglo de número de mayor a menor 
+        - variable.sort( (valor1, valor2) => valor2 - valor1 );
+
+
+* Objetos en JavaScript
+    * map 
+    * filter
+    * reduce  (ver el archivo de objetos)
+    
+
+
+* Métodos de fechas 
+    * obtener el mes 
+        - variable.getMonth();
+            - Devuelve de 0 a 11 siendo enero el mes 0 y diciembre el mes 11
+
+    * Obtener el dia 
+        - variable.getDay();
+            - Devuelve el numero del dia
+
+    * Obtener el año 
+        - variable.getFullYear()
+
+    * Obtener los minutos 
+        - variable.getMinutes()
+
+    * Obtener las horas 
+        - variable.getHours()
+
+    * Obtener todos los segundos desde 1970
+
+
+
